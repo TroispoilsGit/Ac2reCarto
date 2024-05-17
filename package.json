@@ -1,0 +1,16 @@
+{
+  "name": "cartographe-ac2re",
+  "version": "1.0.0",
+  "description": "Cartographe for Asheron's Call 2",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Troispoils",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^30.0.6",
+    "leaflet": "^1.9.4"
+  }
+}
