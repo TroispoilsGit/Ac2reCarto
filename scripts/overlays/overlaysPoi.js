@@ -1,3 +1,4 @@
+import initPoImarker from '../modules/poi.js';
 import customIcons from '../modules/iconsMap.js';
 import npcLocOverlay from "./overlaysNpc.js";
 
@@ -11,21 +12,20 @@ async function setupOverlayMaps() {
     Object.keys(overlayPoi).forEach(key => {
         const layerGroup = overlayPoi[key];
         //overlayMaps[key] = layerGroup; // Assigner chaque layerGroup à la clé correspondante dans overlayMaps
-        layerControl.addOverlay(layerGroup, key); // Ajoute chaque couche à la carte avec son nom
+        //layerControl.addOverlay(layerGroup, key); // Ajoute chaque couche à la carte avec son nom
     });
 
     //ADD OVERLAY NPC
-    let test =  await npcLocOverlay();
-    overlayMaps["Npc"] = test;
-    layerControl.addOverlay(test, "Npc");
+    //let test =  await npcLocOverlay();
+    //overlayMaps["Npc"] = test;
+    //layerControl.addOverlay(test, "Npc");
 }
 
 async function getOverlayMaps() {
     await Promise.all(Object.keys(overlayMapsTemplate).map(async (key) => {
-        const url = `/poi/${key.toLowerCase()}/`;
+        const result = initPoImarker(key.toLowerCase());
         try {
-            const response = await fetch(url);
-            const data = await response.json();
+            const data = result;
             let icon = overlayMapsTemplate[key].icon;
             overlayMaps[key] = L.layerGroup(data.map((item) => L.marker([item.y, item.x], { icon: icon }).bindPopup(item.description)));
         } catch (error) {
