@@ -1,0 +1,24 @@
+html, body {
+    height: 100%; /* Assurez-vous que le corps prend toute la hauteur de la fenêtre */
+    margin: 0;
+    padding: 0;
+}
+#map {
+    height: 100vh; /* Hauteur de la fenêtre de visualisation */
+    width: 100vw; /* Largeur de la fenêtre de visualisation */
+}
+.leaflet-tile {
+    border: 1px solid #ff000000; /* Ajoute une bordure noire d'un pixel */
+}
+.coordinates-overlay {
+    width: 126px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    font-size: 16px;
+    z-index: 1000; /* S'assure que l'overlay est visible au-dessus de la carte */
+}
