@@ -53,7 +53,7 @@ Contributions are welcome! If you'd like to contribute to Cartographer of Ashero
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the ISC License - see the [LICENSE](https://www.isc.org/licenses/) file for details.
 
 ## Acknowledgments
 
