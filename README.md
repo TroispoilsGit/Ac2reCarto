@@ -40,8 +40,6 @@ To run Cartographer of Asheron's Call 2 locally, follow these steps:
    yarn start
    ```
 
-5. Open your web browser and visit `http://localhost:3000` to view the application.
-
 ## Contributing
 
 Contributions are welcome! If you'd like to contribute to Cartographer of Asheron's Call 2, please follow these guidelines:
