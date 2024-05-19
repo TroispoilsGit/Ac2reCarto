@@ -18,12 +18,12 @@ To run Cartographer of Asheron's Call 2 locally, follow these steps:
 
 1. Clone this repository to your local machine.
    ```bash
-   git clone https://github.com/yourusername/cartographer-ac2.git
+   git clone https://github.com/TroispoilsGit/Ac2reCarto.git
    ```
 
 2. Navigate to the project directory.
    ```bash
-   cd cartographer-ac2
+   cd Ac2reCarto
    ```
 
 3. Install dependencies using npm or yarn.
